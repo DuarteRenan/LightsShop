@@ -1,0 +1,452 @@
+/*-Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Menu */
+#nav {
+    position: absolute;
+    width: 100%;
+    top: 1%;
+    color: white;
+    display: block;
+}
+
+#logotop {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+
+}
+
+#nav ul {
+    font-weight: 600;
+    font-size: 1.2rem;
+    float: right;
+}
+
+#nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/* Pagina Principal */
+.home {
+    background-color: blue;
+    height: 100vh;
+    min-height: auto;
+    background: url("../assets/bghome.png");
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    flex-direction: column;
+    color: white;
+}
+
+.home h1 {
+    font-size: 3rem;
+}
+
+.home h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.home h1,
+.home h2 {
+    margin-bottom: 1%;
+}
+
+.home h1,
+.home h2,
+.home button {
+    text-align: left;
+    float: left;
+    margin-top: 1%;
+    margin-left: 12%;
+}
+
+/*Buttons*/
+.btn {
+    padding: 1%;
+    border-radius: 3px;
+    width: fit-content;
+    font-size: 1.5rem;
+}
+
+.btn-vendedor {
+    font-weight: 600;
+}
+
+.yellow {
+    background-color: #d8c01a;
+}
+
+.black {
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 5px 3rem;
+}
+
+.trans {
+    color: white;
+    background-color: rgba(0, 0, 0, .0);
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+/* Produtos */
+
+
+.produtos {
+    background-color: white;
+    height: fit-content;
+}
+
+.produtos h2,
+.produtos P,
+.produtos h3 {
+    text-align: center;
+}
+
+.produtos p {
+    color: #646464;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.produtos p:nth-child(4) {
+    font-size: smaller;
+}
+
+
+
+div#objetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.obj img {
+    max-height: auto;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.obj {
+    min-width: 250;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #646464;
+    padding: 0;
+    margin: 1% 1% auto 1%;
+}
+
+.obj h4 {
+    color: black;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 40px 0;
+}
+
+.textinf {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+}
+
+.textinf {
+    font-size: 1.5rem;
+
+}
+
+.side {
+    width: 50%;
+    height: auto;
+}
+
+.imginf img {
+    height: auto;
+    max-width: 95%;
+    border-radius: 15px;
+}
+
+.imginf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btnparc2 {
+    color: black;
+    border-color: black;
+}
+
+/* FOOTER */
+footer {
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 20px 0 20px;
+    text-align: left;
+
+}
+
+footer h4 {
+    margin: 20px 5px 20px 0px;
+}
+
+#ulfoot {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#ulfoot li {
+    font-weight: 300;
+
+}
+
+#olfoot {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#olfoot li {
+    padding: 10px 5px 10px 5px;
+}
+
+/* MODAL */
+.fechar {
+    background-color: olivedrab;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    align-self: flex-end;
+    margin-right: -1%;
+    text-align: center;
+    outline: none;
+    color: white;
+}
+
+.modal-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.modal {
+    background-color: white;
+    height: fit-content;
+    width: 70%;
+    min-width: 360px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.modal p {
+    color: lightslategray;
+}
+
+.mostrar {
+    display: flex;
+}
+
+#fparc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    width: 50%;
+    min-width: 300px;
+    box-sizing: content-box;
+}
+
+#fparc .text {
+    font-size: 1rem;
+    margin-top: 1%;
+    padding: 10px;
+    border: 1px solid #f6f4f4;
+    background-color: #f6f4f4;
+    outline: none;
+}
+
+.btn-f {
+    width: 100%;
+    background-color: lime;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    margin-top: 10%;
+    outline: none;
+}
+
+button#btnarrow {
+    background-color: lime;
+    outline: none;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+
+div.sticky {
+    position: sticky;
+    display: none;
+    justify-content: flex-end;
+    opacity: 0;
+    top: 85%;
+}
+.icon{
+    display: none;
+}
+
+@media (max-width: 618px) {
+    #nav {
+        position: absolute;
+        top:0;
+        padding: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, .6);
+        display: block;
+        overflow: hidden;
+    }
+
+    #logotop {
+        position: relative;
+        display: block;
+        padding: 5px;
+
+    }
+
+    #nav ul{
+        color: white;
+        margin: 10px 0 0 0;
+        text-decoration: none;
+        font-size: 17px;
+        display: none;
+    }
+    #nav li{
+        width: 99vw;
+        background-color: rgba(0, 0, 0, .6);
+        display: block;
+        text-align: center;
+
+    }
+
+    #nav li:hover{
+            background-color: #ddd;
+            color: black;
+    }
+
+    .icon {
+        padding: 20px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: xx-large;
+     
+    }
+
+    .produtos {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #objetos {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .obj {
+        width: 100%;
+        max-width: 65%;
+    }
+
+    .obj button {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .textinf,
+    .side {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    section button {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    section h2 {
+        margin-bottom: 20px;
+    }
+
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+}
